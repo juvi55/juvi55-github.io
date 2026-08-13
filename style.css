@@ -214,23 +214,31 @@ h1 {
 
 /* Skills */
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+.skill-list {
+    max-width: 650px;
 }
 
-.skills span {
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 20px;
+    margin-bottom: 10px;
+
     background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
 
-    border: 1px solid #dbeafe;
-
-    padding: 10px 18px;
-
-    border-radius: 30px;
-
-    color: #2563eb;
+.skill span:first-child {
     font-weight: bold;
+    color: #111827;
+}
+
+.skill span:last-child {
+    color: #6b7280;
+    font-size: 14px;
 }
 
 
